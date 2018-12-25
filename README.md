@@ -12,7 +12,19 @@ npm i kindeditor-vue --save -D
 ## 使用方法
 
 ### demo:
+
 ``` bash
+#main.js
+
+  import kindeditorVue from 'kindeditor-vue'
+  import 'kindeditor-vue/dist/kindeditor-vue.min.css'
+
+  Vue.use(kindeditorVue)
+```
+
+``` bash
+#页面引用
+
     <Editor @getHtml="getHtml" >
       <button id="getHtml"  slot="getHtml">获取html</button>
       <button slot="clear">清空</button>
